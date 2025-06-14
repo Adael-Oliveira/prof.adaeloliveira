@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prof. Adael Oliveira - Arduino, ESP32 e Robótica</title>
+
     <script type="importmap">
-    {
-        "imports": {
-            "vanilla-tilt": "https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"
+        {
+            "imports": {
+                "vanilla-tilt": "https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"
+            }
         }
-    }
     </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Titillium+Web:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
+    <!-- Header -->
     <header id="main-header">
         <div class="container">
             <a href="#home" class="logo">Prof. Adael Oliveira</a>
@@ -38,7 +42,10 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
+
+        <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container hero-content">
                 <div class="hero-text">
@@ -46,34 +53,40 @@
                     <p>Especialista em Robótica e Tecnologia Educacional com experiência prática em hackathons, e aulas para instituições de renome. Meu foco é tornar a tecnologia acessível e divertida para todos.</p>
                     <a href="https://wa.me/5518981167681?text=Olá,%20Prof.%20Adael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informações." class="cta-button">Fale comigo no WhatsApp</a>
                 </div>
-           <div class="hero-image">
-    <img src="https://raw.githubusercontent.com/Adael-Oliveira/prof.adaeloliveira/main/assets/minhafoto.png" alt="Foto profissional de Adael Oliveira">
-</div>
-
+                <div class="hero-image">
+                    <img src="https://raw.githubusercontent.com/Adael-Oliveira/prof.adaeloliveira/main/assets/minhafoto.png" alt="Foto profissional de Adael Oliveira">
+                </div>
             </div>
- <section id="ebooks" class="section-padding">
+        </section>
+
+        <!-- Ebooks Section -->
+        <section id="ebooks" class="section-padding">
             <div class="container">
                 <h2 class="section-title">E-books Educacionais</h2>
                 <p class="section-subtitle">Aprenda no seu ritmo com materiais didáticos e práticos.</p>
                 <div class="grid-3">
+
                     <div class="card ebook-card">
                         <img src="https://raw.githubusercontent.com/Adael-Oliveira/prof.adaeloliveira/main/assets/1.png" alt="Capa do E-book Eletrônica Básica">
-                        <h3>Eletrônica Básica - da Teoria a Prática</h3>
+                        <h3>Eletrônica Básica - da Teoria à Prática</h3>
                         <p>Do zero absoluto à criação de protótipos funcionais. Ideal para iniciantes.</p>
                         <a href="#" class="button" target="_blank">Comprar Agora</a>
                     </div>
+
                     <div class="card ebook-card">
-                        <img src="ebook-cover2.png" alt="Capa do E-book ESP32 para IoT">
-                        <h3>Matematica e Lógica com Arduino</h3>
-                        <p>Aprenda a Matematica e a Lógica de Programação com mais de 20 projetos em Arduino</p>
+                        <img src="ebook-cover2.png" alt="Capa do E-book Matematica e Lógica com Arduino">
+                        <h3>Matemática e Lógica com Arduino</h3>
+                        <p>Aprenda Matemática e Lógica de Programação com mais de 20 projetos em Arduino.</p>
                         <a href="#" class="button" target="_blank">Comprar Agora</a>
                     </div>
+
                     <div class="card ebook-card">
                         <img src="ebook-cover2.png" alt="Capa do E-book ESP32 para IoT">
                         <h3>ESP32 para IoT</h3>
                         <p>Conecte seus projetos à internet e explore o mundo da Internet das Coisas.</p>
                         <a href="#" class="button" target="_blank">Comprar Agora</a>
                     </div>
+
                     <div class="card ebook-card free-ebook-card">
                         <img src="ebook-cover-free.png" alt="Capa do E-book Gratuito 5 Projetos Incríveis">
                         <h3>E-book Gratuito</h3>
@@ -83,75 +96,90 @@
                             <button type="submit" class="button">Baixar Grátis</button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
 
-
+        <!-- Produtos Section -->
         <section id="produtos" class="section-padding section-light">
             <div class="container">
                 <h2 class="section-title">Produtos Recomendados</h2>
                 <p class="section-subtitle">Equipamentos que eu uso.</p>
                 <div class="grid-4">
+
                     <div class="card product-card" data-tilt>
                         <img src="product-kit.png" alt="Kit Iniciante para Arduino">
                         <h4>Kit Arduino</h4>
                         <p class="recommendation">"Perfeito para quem está começando e quer ter todos os componentes essenciais em mãos."</p>
                         <a href="https://mercadolivre.com/sec/2vNSVxT" class="button" target="_blank">Ver no Mercado Livre</a>
                     </div>
+
                     <div class="card product-card" data-tilt>
                         <img src="product-arduino.png" alt="Placa Arduino Uno">
                         <h4>Arduino UNO</h4>
                         <p class="recommendation">"O cérebro de muitos projetos. Recomendo sempre ter um Arduino Uno original ou de boa qualidade."</p>
                         <a href="https://mercadolivre.com/sec/29HiB9r" class="button" target="_blank">Ver no Mercado Livre</a>
                     </div>
+
                     <div class="card product-card" data-tilt>
                         <img src="product-esp32.png" alt="Placa ESP32">
                         <h4>ESP32</h4>
                         <p class="recommendation">"Quando seu projeto precisa de Wi-Fi ou Bluetooth, o ESP32 é a melhor escolha."</p>
                         <a href="https://mercadolivre.com/sec/27Ky4rU" class="button" target="_blank">Ver no Mercado Livre</a>
                     </div>
+
                     <div class="card product-card" data-tilt>
                         <img src="product-sensors.png" alt="Kit de Sensores">
                         <h4>Kit 37 Sensores</h4>
                         <p class="recommendation">"Os 'sentidos' do seu projeto. Um bom kit de sensores abre um universo de possibilidades."</p>
                         <a href="https://mercadolivre.com/sec/1vqd1ov" class="button" target="_blank">Ver no Mercado Livre</a>
                     </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- Cursos Section -->
         <section id="cursos" class="section-padding">
             <div class="container">
                 <h2 class="section-title">Cursos e Oficinas</h2>
                 <p class="section-subtitle">Aulas presenciais e online, para turmas e empresas. Vamos aprender juntos?</p>
                 <div class="cursos-content">
+
                     <div class="cursos-info">
                         <h3>Capacitação Sob Medida</h3>
                         <p>Ofereço treinamentos personalizados em Robótica Educacional, programação com Arduino e desenvolvimento de projetos IoT com ESP32. Aulas práticas e focadas nas necessidades dos alunos.</p>
+
                         <h4>Depoimentos</h4>
                         <div class="testimonial">
                             <blockquote>"A didática do professor Adael é fantástica! Consegui criar meu primeiro robô em poucas aulas."</blockquote>
                             <cite>- João P., Aluno de Oficina</cite>
                         </div>
+
                         <div class="testimonial">
-                             <blockquote>"Levamos o curso de Arduino para nossa empresa e o resultado foi incrível. Recomendo!"</blockquote>
+                            <blockquote>"Levamos o curso de Arduino para nossa empresa e o resultado foi incrível. Recomendo!"</blockquote>
                             <cite>- Maria S., Gerente de Inovação</cite>
                         </div>
+
                         <a href="#contato" class="button">Quero um Orçamento</a>
                     </div>
+
                     <div class="cursos-gallery">
                         <img src="workshop-photo.png" alt="Foto de uma turma em oficina de robótica">
                     </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- Na Mídia Section -->
         <section id="midia" class="section-padding section-light">
             <div class="container">
                 <h2 class="section-title">Na Mídia</h2>
                 <p class="section-subtitle">Confira as matérias e reportagens que mencionam meu trabalho.</p>
                 <div class="grid-3">
+
                     <div class="card media-card">
                         <div class="media-card-img-container">
                             <img src="media-logo1.png" alt="Logo de portal de notícias de tecnologia">
@@ -162,9 +190,10 @@
                             <a href="#" class="button" target="_blank">Ler Mais</a>
                         </div>
                     </div>
+
                     <div class="card media-card">
                         <div class="media-card-img-container">
-                             <img src="media-logo2.png" alt="Logo de portal de inovação">
+                            <img src="media-logo2.png" alt="Logo de portal de inovação">
                         </div>
                         <div class="media-card-content">
                             <h3>Vencedores de Hackathon usam ESP32 para solução IoT</h3>
@@ -172,6 +201,7 @@
                             <a href="#" class="button" target="_blank">Ler Mais</a>
                         </div>
                     </div>
+
                     <div class="card media-card">
                         <div class="media-card-img-container">
                             <img src="media-logo3.png" alt="Logo de publicação sobre educação e tecnologia">
@@ -182,15 +212,18 @@
                             <a href="#" class="button" target="_blank">Ler Mais</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- Contato Section -->
         <section id="contato" class="section-padding">
             <div class="container">
                 <h2 class="section-title">Contato</h2>
                 <p class="section-subtitle">Vamos conversar sobre seu projeto ou sua necessidade de capacitação?</p>
                 <div class="contato-wrapper">
+
                     <div class="contato-links">
                         <h3>Canais Diretos</h3>
                         <a href="https://wa.me/5518981167681?text=Olá,%20Prof.%20Adael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informações." class="social-link" target="_blank">
@@ -203,6 +236,7 @@
                             <i class="fas fa-envelope"></i> E-mail
                         </a>
                     </div>
+
                     <div class="contato-form">
                         <h3>Ou envie uma mensagem</h3>
                         <form id="contact-form">
@@ -212,11 +246,14 @@
                             <button type="submit" class="button">Enviar Mensagem</button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
+
     </main>
 
+    <!-- Footer -->
     <footer id="main-footer">
         <div class="container">
             <p>&copy; 2025 Prof. Adael Oliveira. Todos os direitos reservados.</p>
@@ -226,6 +263,5 @@
     <script type="module" src="script.js"></script>
 
 </body>
-</html>
 
 </html>
