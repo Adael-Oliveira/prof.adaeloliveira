@@ -1,9 +1,7 @@
-import vanillaTilt from 'vanilla-tilt';
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Vanilla Tilt Effect on Product Cards ---
-    vanillaTilt.init(document.querySelectorAll(".product-card"), {
+    VanillaTilt.init(document.querySelectorAll(".product-card"), {
         max: 15,
         speed: 400,
         glare: true,
@@ -71,4 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
     handleFormSubmit('contact-form', 'Mensagem enviada com sucesso! Entrarei em contato em breve.');
 
 });
-
