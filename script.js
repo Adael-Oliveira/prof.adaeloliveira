@@ -1,7 +1,9 @@
+import vanillaTilt from 'vanilla-tilt';
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Vanilla Tilt Effect on Product Cards ---
-    VanillaTilt.init(document.querySelectorAll(".product-card"), {
+    vanillaTilt.init(document.querySelectorAll(".product-card"), {
         max: 15,
         speed: 400,
         glare: true,
@@ -41,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const id = entry.target.getAttribute('id');
                 navLinks.forEach(link => {
                     link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${id}`) {
+                    if (link.getAttribute('href') === #${id}) {
                         link.classList.add('active');
                     }
                 });
