@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja - Prof. Adael Oliveira</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <a href="index.html" class="logo">Prof. Adael Oliveira</a>
+      <!-- Aqui você pode repetir o menu ou simplificar -->
+    </div>
+  </header>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <h2 class="section-title">Loja Completa</h2>
+        <p class="section-subtitle">Veja todos os produtos que uso e recomendo.</p>
+
+        <!-- Campo de filtro -->
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Pesquisar produtos...">
+        </div>
+
+        <!-- Lista de produtos -->
+        <div class="grid-4" id="productList">
+          <div class="card product-card">
+            <img src="https://raw.githubusercontent.com/Adael-Oliveira/prof.adaeloliveira/main/assets/kit arduino.PNG" alt="Kit Arduino">
+            <h4>Kit Arduino</h4>
+            <p class="recommendation">"Perfeito para iniciantes."</p>
+            <a href="https://mercadolivre.com/sec/2vNSVxT" class="button" target="_blank">Ver no Mercado Livre</a>
+          </div>
+
+          <div class="card product-card">
+            <img src="https://raw.githubusercontent.com/Adael-Oliveira/prof.adaeloliveira/main/assets/esp32.PNG" alt="ESP32">
+            <h4>ESP32</h4>
+            <p class="recommendation">"Wi-Fi e Bluetooth integrados."</p>
+            <a href="https://mercadolivre.com/sec/27Ky4rU" class="button" target="_blank">Ver no Mercado Livre</a>
+          </div>
+
+          <!-- Adicione mais produtos aqui -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="main-footer">
+    <div class="container">
+      <p>&copy; 2025 Prof. Adael Oliveira. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="loja.js"></script>
+</body>
+</html>
