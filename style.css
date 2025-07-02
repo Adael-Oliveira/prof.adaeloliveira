@@ -104,7 +104,6 @@ body {
     cursor: pointer;
 }
 
-
 /* Hero Section */
 .hero {
     background-color: var(--light-gray-color);
@@ -184,13 +183,17 @@ body {
 }
 
 /* Grid Layout */
-.grid-3, .grid-4 {
-    display: grid;
-    gap: 30px;
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.grid-3 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-.grid-4 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.grid-4 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
 
 /* Card Styling */
 .card {
@@ -231,11 +234,11 @@ body {
     color: var(--white-color);
     padding: 12px 20px;
     text-decoration: none;
+    border: none;
     border-radius: 5px;
     font-weight: 600;
     transition: background-color 0.3s;
     display: inline-block;
-    border: none;
     cursor: pointer;
     margin: 0 20px 20px 20px;
     font-size: 1rem;
@@ -246,16 +249,45 @@ body {
 }
 
 /* E-book Section Specifics */
+.ebook-card {
+    max-width: 320px;  /* Limita largura máxima */
+    margin: 0 auto;    /* Centraliza dentro da célula do grid */
+}
+
+.ebook-card img {
+    height: 180px;     /* Menor que o original para não ficar tão grande */
+    width: auto;       /* Mantém proporção */
+    max-width: 100%;   /* Não ultrapassa largura do card */
+    margin: 0 auto;    /* Centraliza a imagem */
+    display: block;
+}
+
+.ebook-card .button {
+    display: block;
+    width: calc(100% - 40px); /* Considera 20px de padding de cada lado */
+    margin: 0 20px 20px 20px;
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.ebook-card p {
+    padding: 0 20px 20px 20px;
+}
+
 .ebook-card.free-ebook-card {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
+
 .ebook-card.free-ebook-card h3 {
     color: var(--white-color);
 }
+
 .lead-form {
     padding: 0 20px 20px 20px;
 }
+
 .lead-form input {
     width: 100%;
     padding: 10px;
@@ -263,22 +295,24 @@ body {
     border: 1px solid #ccc;
     margin-bottom: 10px;
 }
+
 .lead-form button {
     width: 100%;
     margin: 0;
 }
 
-
 /* Product Section Specifics */
 .product-card {
     padding-top: 20px;
 }
+
 .product-card img {
     width: 150px;
     height: 150px;
     object-fit: contain;
     margin: 0 auto;
 }
+
 .product-card .recommendation {
     font-style: italic;
     font-size: 0.9rem;
@@ -286,17 +320,18 @@ body {
     color: #666;
     flex-grow: 1;
 }
+
 .product-card .recommendation::before {
     content: '“';
     font-size: 1.5rem;
     color: var(--accent-color);
 }
+
 .product-card .recommendation::after {
     content: '”';
     font-size: 1.5rem;
     color: var(--accent-color);
 }
-
 
 /* Media Section */
 .media-card {
@@ -345,7 +380,6 @@ body {
     margin: 0;
     align-self: flex-start;
 }
-
 
 /* Cursos Section */
 .cursos-content {
