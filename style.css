@@ -184,6 +184,7 @@ body {
 
 /* Grid Layout */
 .grid-3 {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     max-width: 960px;
@@ -191,8 +192,11 @@ body {
 }
 
 .grid-4 {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Forçar 4 colunas em telas grandes */
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Card Styling */
@@ -511,6 +515,14 @@ body {
     .cursos-gallery {
         margin-top: 30px;
     }
+
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas médias */
+    }
+
+    #midia .grid-3 {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas para Na Mídia em telas médias */
+    }
 }
 
 @media (max-width: 768px) {
@@ -546,5 +558,9 @@ body {
 
     .contato-wrapper {
         padding: 20px;
+    }
+
+    .grid-4, #midia .grid-3 {
+        grid-template-columns: 1fr; /* 1 coluna em telas pequenas */
     }
 }
