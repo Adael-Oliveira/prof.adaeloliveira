@@ -71,3 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
     handleFormSubmit('contact-form', 'Mensagem enviada com sucesso! Entrarei em contato em breve.');
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const navMenu = document.querySelector('#main-nav ul');
+
+    mobileMenuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+});
