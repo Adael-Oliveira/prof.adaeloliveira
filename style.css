@@ -278,7 +278,7 @@ body {
 .ebook-card {
     padding-top: 20px;
     width: 100%;
-    max-width: 250px;
+    max-width: 100px;    /*  <<<<< */
 }
 
 .ebook-card img {
