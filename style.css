@@ -70,6 +70,7 @@ body {
     display: flex !important;
 }
 
+
 #main-nav a {
     text-decoration: none;
     color: var(--dark-gray-color);
@@ -107,6 +108,7 @@ body {
     color: var(--primary-color);
     cursor: pointer;
 }
+
 
 /* Hero Section */
 .hero {
@@ -186,40 +188,14 @@ body {
     font-size: 1.1rem;
 }
 
-/* Search Box */
-.search-box {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.search-box input {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-}
-
 /* Grid Layout */
-.grid-3 {
+.grid-3, .grid-4 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    max-width: 960px;
-    margin: 0 auto;
+    gap: 30px;
 }
 
-.grid-4 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 /* Card Styling */
 .card {
@@ -260,11 +236,11 @@ body {
     color: var(--white-color);
     padding: 12px 20px;
     text-decoration: none;
-    border: none;
     border-radius: 5px;
     font-weight: 600;
     transition: background-color 0.3s;
     display: inline-block;
+    border: none;
     cursor: pointer;
     margin: 0 20px 20px 20px;
     font-size: 1rem;
@@ -275,52 +251,16 @@ body {
 }
 
 /* E-book Section Specifics */
-.ebook-card {
-    padding-top: 20px;
-    width: 100%;
-    max-width: 250px;    /*  <<<<< */
-}
-
-.ebook-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin: 0 auto;
-}
-
-.ebook-card .recommendation {
-    font-style: italic;
-    font-size: 0.9rem;
-    padding: 0 20px 20px 20px;
-    color: #666;
-    flex-grow: 1;
-}
-
-.ebook-card .recommendation::before {
-    content: '“';
-    font-size: 1.5rem;
-    color: var(--accent-color);
-}
-
-.ebook-card .recommendation::after {
-    content: '”';
-    font-size: 1.5rem;
-    color: var(--accent-color);
-}
-
 .ebook-card.free-ebook-card {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
-
 .ebook-card.free-ebook-card h3 {
     color: var(--white-color);
 }
-
 .lead-form {
     padding: 0 20px 20px 20px;
 }
-
 .lead-form input {
     width: 100%;
     padding: 10px;
@@ -328,26 +268,22 @@ body {
     border: 1px solid #ccc;
     margin-bottom: 10px;
 }
-
 .lead-form button {
     width: 100%;
     margin: 0;
 }
 
+
 /* Product Section Specifics */
 .product-card {
     padding-top: 20px;
-    width: 100%;
-    max-width: 250px;
 }
-
 .product-card img {
     width: 150px;
     height: 150px;
     object-fit: contain;
     margin: 0 auto;
 }
-
 .product-card .recommendation {
     font-style: italic;
     font-size: 0.9rem;
@@ -355,18 +291,17 @@ body {
     color: #666;
     flex-grow: 1;
 }
-
 .product-card .recommendation::before {
     content: '“';
     font-size: 1.5rem;
     color: var(--accent-color);
 }
-
 .product-card .recommendation::after {
     content: '”';
     font-size: 1.5rem;
     color: var(--accent-color);
 }
+
 
 /* Media Section */
 .media-card {
@@ -415,6 +350,7 @@ body {
     margin: 0;
     align-self: flex-start;
 }
+
 
 /* Cursos Section */
 .cursos-content {
@@ -546,10 +482,6 @@ body {
     .cursos-gallery {
         margin-top: 30px;
     }
-
-    .grid-4 {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 768px) {
@@ -587,15 +519,22 @@ body {
         padding: 20px;
     }
 
-    .grid-4 {
-        justify-content: center;
-    }
+}
 
-    .product-card, .ebook-card {
-        max-width: 100%; /* Cards ocupam toda a largura em telas pequenas */
-    }
+.more-products {
+    text-align: center;
+    margin-top: 30px;
+}
 
-    #midia .grid-3 {
-        grid-template-columns: 1fr;
-    }
+.search-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
