@@ -538,3 +538,41 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.cursos-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.testimonial-container {
+  height: 200px; /* ajuste conforme necessário */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 12s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-50%); } /* como duplicamos os depoimentos */
+}
+
+.cursos-gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* responsivo: empilha na vertical em telas menores */
+@media (max-width: 992px) {
+  .cursos-content {
+    grid-template-columns: 1fr;
+  }
+}
